@@ -79,28 +79,13 @@
 			   stats.each(function () {
 				   var $this = $(this);
 
-				   /*$({ Counter: 0 }).animate({ Counter: $this.text() }, {
+				   $({ Counter: 0 }).animate({ Counter: $this.text() }, {
 				   	duration: 2000,
 				   	easing: 'swing',
 				   	step: function (curValue) {
 				      	$this.text(Math.ceil(curValue));
 				    	}
-				  	});*/
-					var easingFn = function (t, b, c, d) {
-						var ts = (t /= d) * t;
-						var tc = ts * t;
-						return b + c * (tc + -3 * ts + 3 * t);
-					}
-					var options = {
-						useEasing: true,
-						easingFn: easingFn,
-						useGrouping: false,
-						separator: ',',
-						decimal: '.',
-					};
-					
-					var demo = new CountUp("myTargetElement", 0, $this.text(), 1, 2.5, options);
-					demo.start();
+				  	});
 				});
 
        	} 
