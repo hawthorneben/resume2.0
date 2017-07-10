@@ -83,7 +83,7 @@ body {
  * -------------------------------------------------------------------
  */
 a, a:visited {
-	color: #0F1626;
+	color: #000;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -258,7 +258,7 @@ abbr[title], dfn[title] {
 }
 mark {
 	background: #FFF49B;
-	color: #0F1626;
+	color: #000;
 }
 hr {
 	border: solid #d2d2d2;
@@ -686,7 +686,7 @@ input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
 	background: #bebebe;
-	color: #0F1626;
+	color: #000;
 	outline: 0;
 }
 .button.button-primary,
@@ -1103,7 +1103,7 @@ header .row {
 }
 header .top-bar {
 	display: block;
-	background: #0F1626;
+	background: #000;
 	min-width: 220px;
 	min-height: 66px;
 	position: absolute;
@@ -1236,7 +1236,7 @@ header .logo a {
 
 /* dropdown nav */
 .main-navigation {
-	background: #0F1626;
+	background: #000;
 	padding: 24px 30px 42px;
 	margin: 0;
 	width: 100%;
@@ -1986,7 +1986,7 @@ header .logo a {
 .popup-modal .link-box {
 	width: 100%;
 	overflow: hidden;
-	background: #0F1626;
+	background: #000;
 }
 .popup-modal .link-box a {
 	font-family: "Quicksand", sans-serif;
@@ -2254,7 +2254,7 @@ header .logo a {
 }
 #stats .icon-part i {
 	font-size: 4.8rem;
-	color: #0F1626;
+	color: #000;
 }
 #stats .stat-count {
 	color: #F5F5F5;
@@ -2654,7 +2654,7 @@ footer .copyright span:last-child::after {
 	line-height: inherit;
 }
 #go-top a:hover {
-	background: #0F1626;
+	background: #000;
 }
 
 /*# sourceMappingURL=main.css.map */
