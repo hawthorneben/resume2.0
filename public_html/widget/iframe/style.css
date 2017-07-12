@@ -366,11 +366,11 @@ body.money .modal input[type="submit"] {
 }
 
 body.stop .modal #content a {
-  color: #ff3232;
+  color: #76323F;
 }
 
 body.stop .modal input[type="submit"] {
-  background-color: #ff3232;
+  background-color: #76323F;
 }
 
 body.slow .modal #content a,
