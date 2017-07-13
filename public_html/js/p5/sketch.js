@@ -31,7 +31,7 @@ function draw() {
        var angle = noise(xoff, yoff, zoff) * TWO_PI;
        var vector = createVector(sin(angle), cos(angle));
        vector.normalize();
-       vector.mult(8);
+       vector.mult(0.05);
        values.push(vector);
        
        yoff += inc;
@@ -57,7 +57,7 @@ function draw() {
     particles[i].show();
   }
   
-  zoff += 0.00005;
+  zoff += 0.0001;
 }
 
 function index(i, j) {

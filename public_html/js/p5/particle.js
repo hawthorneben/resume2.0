@@ -17,7 +17,7 @@ function Particle() {
   }
   
   this.show = function() {
-    stroke(255, 10);
+    stroke(255, 15);
     line(this.pos.x, this.pos.y, this.prev.x, this.prev.y);
     this.prev = this.pos.copy();
   }
