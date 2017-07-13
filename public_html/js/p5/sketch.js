@@ -1,12 +1,11 @@
-var inc = 0.05;
-var scl = 30;
+var inc = 0.03;
+var scl = 27;
 var rows, cols;
 
 var values = [];
 var zoff = 0.00;
 
 var particles = [];
-var canvas;
 
 function setup() {
   canvas = createCanvas(windowWidth, 1000);
@@ -32,7 +31,7 @@ function draw() {
        var angle = noise(xoff, yoff, zoff) * TWO_PI;
        var vector = createVector(sin(angle), cos(angle));
        vector.normalize();
-       vector.mult(7);
+       vector.mult(8);
        values.push(vector);
        
        yoff += inc;
