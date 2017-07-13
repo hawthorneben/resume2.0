@@ -8,7 +8,7 @@ var zoff = 0.00;
 var particles = [];
 
 function setup() {
-  canvas = createCanvas(windowWidth, 1000);
+  canvas = createCanvas(windowWidth - 20, windowHeight);
   canvas.position(0, 0);
   canvas.style('z-index', '-1');
   background(0);
@@ -57,7 +57,7 @@ function draw() {
     particles[i].show();
   }
   
-  zoff += 0.0005;
+  zoff += 0.00005;
 }
 
 function index(i, j) {
