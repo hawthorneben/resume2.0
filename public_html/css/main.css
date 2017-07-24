@@ -83,7 +83,7 @@ body {
  * -------------------------------------------------------------------
  */
 a, a:visited {
-	color: #000;
+	color: #fff;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -1422,6 +1422,18 @@ header .logo a {
 .intro-content .button {
 	color: #F5F5F5 !important;
 	border-color: rgba(255, 255, 255, 0.3);
+}
+.intro-content .button:hover, .intro-content .button:focus {
+	border-color: #76323F;
+}
+
+.intro-content a {
+	padding: 18px 20px;
+	position: relative;
+	display: inline-block;
+	margin: 15px 25px;
+	outline: none;
+	color: #fff;
 	height: 6rem !important;
 	line-height: 5.4rem !important;
 	padding: 0 3.5rem 0 3rem !important;
@@ -1430,18 +1442,43 @@ header .logo a {
 	text-transform: uppercase;
 	letter-spacing: .25rem;
 }
-.intro-content .button:hover, .intro-content .button:focus {
-	border-color: #76323F;
+
+.intro-content a::before,
+.intro-content a::after  {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 3px solid #aaa;
+	content: '';
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
 }
-.intro-content .button::after {
-	display: inline-block;
-	content: "\f107";
-	font-family: fontAwesome;
-	font-size: 1.6rem;
-	line-height: inherit;
-	text-align: center;
-	position: relative;
-	left: 1.2rem;
+
+.intro-content a::after  {
+	border-color: #76323F;
+	opacity: 0;
+	-webkit-transform: translateY(-7px) translateX(6px);
+	-moz-transform: translateY(-7px) translateX(6px);
+	transform: translateY(-7px) translateX(6px);
+}
+
+.intro-content a:hover::before,
+.intro-content a:focus::before {
+	opacity: 0;
+	-webkit-transform: translateY(5px) translateX(-5px);
+	-moz-transform: translateY(5px) translateX(-5px);
+	transform: translateY(5px) translateX(-5px);
+}
+
+.intro-content a:hover::after,
+.intro-content a:focus::after  {
+	opacity: 1;
+	-webkit-transform: translateY(0px) translateX(0px);
+	-moz-transform: translateY(0px) translateX(0px);
+	transform: translateY(0px) translateX(0px);
 }
 
 .intro-social {
@@ -1543,6 +1580,14 @@ header .logo a {
 }
 #about .section-intro {
 	margin-bottom: 3rem;
+}
+
+#about::after {
+	border-color: #fff;
+    opacity: 0;
+    -webkit-transform: translateY(-7px) translateX(6px);
+    -moz-transform: translateY(-7px) translateX(6px);
+    transform: translateY(-7px) translateX(6px);
 }
 
 .intro-info {
