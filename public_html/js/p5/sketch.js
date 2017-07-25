@@ -1,4 +1,4 @@
-var inc = 0.03;
+var inc = 0.06;
 var scl = 27;
 var rows, cols;
 
@@ -11,7 +11,7 @@ function setup() {
   canvas = createCanvas(displayWidth - 20, displayHeight);
   canvas.position(0, 0);
   canvas.style('z-index', '-1');
-  background(0);
+  background(5);
   
   rows = floor(height/scl);
   cols = floor(width/scl);
@@ -28,7 +28,7 @@ function draw() {
     var yoff = 0;
     for (var i = 0; i < rows; i++) {
        yoff += inc;
-       var angle = noise(xoff, yoff, zoff) * TWO_PI;
+       var angle = noise(xoff, yoff, zoff) * 2 * TWO_PI;
        var vector = createVector(sin(angle), cos(angle));
        vector.normalize();
        vector.mult(0.05);
@@ -57,7 +57,7 @@ function draw() {
     particles[i].show();
   }
   
-  zoff += 0.0001;
+  zoff += 0.001;
 }
 
 function index(i, j) {
