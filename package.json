@@ -1,21 +1,21 @@
 {
-    "name": "serve",
-    "version": "0.3.0",
-    "description": "File server",
-    "engines": {
-      "node": "8.9.1"
-    },
-    "main": "index.js",
-    "scripts": {
-      "start": "node index.js",
-      "test": "node test.js"
-    },
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/hawthorneben/resume2.0"
-    },
-    "keywords": [
-      "node",
-      "heroku"
-    ]
-  }
+  "name": "serve",
+  "version": "0.3.0",
+  "description": "File server",
+  "engines": {
+    "node": "8.9.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hawthorneben/resume2.0"
+  },
+  "keywords": [
+    "node",
+    "heroku"
+  ]
+}
