@@ -75,7 +75,7 @@
 	   				<span>I'll get back to you as soon as possible</span>
 	   			</p>
 
-	   			<a class="stroke smoothscroll" href="http://hawthorne.getforge.io" title="">Return Home</a>
+	   			<a class="stroke smoothscroll" href="index.html" title="">Return Home</a>
 
 	   		</div>  
    			
