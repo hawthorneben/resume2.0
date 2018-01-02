@@ -8,7 +8,7 @@ var zoff = 0.00;
 var particles = [];
 
 function setup() {
-  canvas = createCanvas(displayWidth - 20, displayHeight);
+  canvas = createCanvas(windowWidth, windowHeight);
   canvas.position(0, 0);
   canvas.style('z-index', '-1');
   background(5);
