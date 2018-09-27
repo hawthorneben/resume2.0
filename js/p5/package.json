@@ -1,0 +1,14 @@
+{
+  "name": "redirect",
+  "version": "1.0.0",
+  "description": "",
+  "main": "redirect.js",
+  "scripts": {
+    "test": "node redirect.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "html-to-json": "^0.6.0"
+  }
+}
